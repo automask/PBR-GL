@@ -1,0 +1,6 @@
+meshes/
+shaders/
+textures/
+*.user
+*.hdr
+.idea/

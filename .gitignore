@@ -7,3 +7,5 @@ data/PBR.exe
 data/*.dll
 data/shaders/spirv/
 projects/cmake/build/
+config.bat
+node_modules
