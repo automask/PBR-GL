@@ -147,19 +147,19 @@
     <ProjectGuid>{7F6DC88B-FFAA-4C17-BAAC-DFEA91BAA2D3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>PBR</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -187,7 +187,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;GLFW_INCLUDE_NONE;GLM_ENABLE_EXPERIMENTAL;ENABLE_OPENGL;ENABLE_VULKAN;ENABLE_D3D11;ENABLE_D3D12;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;GLFW_INCLUDE_NONE;GLM_ENABLE_EXPERIMENTAL;ENABLE_OPENGL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir)\..\..\lib\glfw\include;$(ProjectDir)\..\..\lib\glad\include;$(ProjectDir)\..\..\lib\glm\include;$(ProjectDir)\..\..\lib\stb\include;$(ProjectDir)\..\..\lib\assimp\include;$(ProjectDir)\..\..\lib\d3dx12;$(ProjectDir)\..\..\lib\volk\include;$(VULKAN_SDK)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>

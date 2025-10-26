@@ -9,6 +9,7 @@
 
 #include <stdexcept>
 #include <memory>
+#include <filesystem>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -135,6 +136,11 @@ void Renderer::setup()
 	// Create uniform buffers.
 	m_transformUB = createUniformBuffer<TransformUB>();
 	m_shadingUB = createUniformBuffer<ShadingUB>();
+
+	namespace fs = std::filesystem;
+
+	auto cfs = fs::current_path().string();
+	printf(">>> current %s\n", cfs.c_str());
 
 	// Load assets & compile/link rendering programs.
 	m_tonemapProgram = linkProgram({

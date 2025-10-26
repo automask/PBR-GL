@@ -9,6 +9,7 @@
 #include <assimp/Importer.hpp>
 #include <assimp/DefaultLogger.hpp>
 #include <assimp/LogStream.hpp>
+#include <stdexcept>
 
 #include "mesh.hpp"
 
